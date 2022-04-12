@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../helper/images.dart';
 
 class Header extends StatefulWidget {
   const Header({Key? key}) : super(key: key);
@@ -15,9 +16,6 @@ class _HeaderState extends State<Header> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SizedBox(
-          height: h * 0.04 + w * 0.04,
-        ),
         Container(
           height: h * 0.03 + w * 0.03,
           width: h * 0.03 + w * 0.03,
@@ -26,8 +24,7 @@ class _HeaderState extends State<Header> {
                 h * 0.006 + w * 0.006,
               )),
               image: const DecorationImage(
-                  image: AssetImage('assets/images/playEnd1x.png'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(h1), fit: BoxFit.cover)),
         ),
         SizedBox(
           width: h * 0.01 + w * 0.01,
@@ -40,8 +37,7 @@ class _HeaderState extends State<Header> {
                 h * 0.006 + w * 0.006,
               )),
               image: const DecorationImage(
-                  image: AssetImage('assets/images/play_all_icon.png'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(h2), fit: BoxFit.cover)),
         ),
         SizedBox(
           width: h * 0.01 + w * 0.01,
@@ -54,8 +50,7 @@ class _HeaderState extends State<Header> {
                 h * 0.006 + w * 0.006,
               )),
               image: const DecorationImage(
-                  image: AssetImage('assets/images/ayaList.png'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(h3), fit: BoxFit.cover)),
         ),
         SizedBox(
           width: h * 0.01 + w * 0.01,
@@ -68,8 +63,7 @@ class _HeaderState extends State<Header> {
                 h * 0.006 + w * 0.006,
               )),
               image: const DecorationImage(
-                  image: AssetImage('assets/images/settings_icon.png'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(h4), fit: BoxFit.cover)),
         ),
         SizedBox(
           width: h * 0.01 + w * 0.01,
@@ -82,8 +76,7 @@ class _HeaderState extends State<Header> {
                 h * 0.006 + w * 0.006,
               )),
               image: const DecorationImage(
-                  image: AssetImage('assets/images/list_icon.png'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(h5), fit: BoxFit.cover)),
         ),
         SizedBox(
           width: h * 0.01 + w * 0.01,
@@ -96,8 +89,7 @@ class _HeaderState extends State<Header> {
                 h * 0.006 + w * 0.006,
               )),
               image: const DecorationImage(
-                  image: AssetImage('assets/images/bookmark_list_icon.png'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(h6), fit: BoxFit.cover)),
         ),
         SizedBox(
           width: h * 0.01 + w * 0.01,
@@ -110,8 +102,7 @@ class _HeaderState extends State<Header> {
                 h * 0.006 + w * 0.006,
               )),
               image: const DecorationImage(
-                  image: AssetImage('assets/images/addBookMark_icon.png'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(h7), fit: BoxFit.cover)),
         ),
         SizedBox(
           width: h * 0.01 + w * 0.01,
@@ -124,8 +115,7 @@ class _HeaderState extends State<Header> {
                 h * 0.006 + w * 0.006,
               )),
               image: const DecorationImage(
-                  image: AssetImage('assets/images/search_icon.png'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(h8), fit: BoxFit.cover)),
         ),
       ],
     );
