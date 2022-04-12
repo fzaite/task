@@ -41,14 +41,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   image: const AssetImage(
                     back,
                   ),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                   height: h * 0.85,
                   width: w,
                 ),
                 Image(
                   image: const AssetImage(border),
                   fit: BoxFit.fill,
-                  height: h * 0.77,
+                  height: h * 0.80,
                   width: w,
                 ),
                 Positioned(
@@ -59,12 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: h * 0.01 + w * 0.03,
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage(b), fit: BoxFit.cover)),
+                            image: AssetImage(b), fit: BoxFit.fill)),
                   ),
                 ),
                 Positioned(
-                    top: h * 0.012 + w * 0.02,
-                    left: h * 0.05 + w * 0.05,
+                    top: h * 0.006 + w * 0.02,
+                    left: h * 0.05 + w * 0.06,
                     child: Row(
                       children: [
                         Container(
@@ -72,33 +72,45 @@ class _MyHomePageState extends State<MyHomePage> {
                           width: h * 0.08 + w * 0.04,
                           decoration: const BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage(a1), fit: BoxFit.cover)),
+                                  image: AssetImage(a1), fit: BoxFit.fill)),
                         ),
                         SizedBox(
-                          width: h * 0.1 + w * 0.12,
+                          width: h * 0.05 + w * 0.16,
                         ),
                         Container(
                           height: h * 0.01 + w * 0.03,
                           width: h * 0.08 + w * 0.04,
                           decoration: const BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage(a2), fit: BoxFit.cover)),
+                                  image: AssetImage(a2), fit: BoxFit.fill)),
                         ),
                       ],
                     )),
                 Positioned(
-                  top: h * 0.005 + w * 0.05,
+                  top: h * 0.01 + w * 0.06,
                   right: h * 0.007 + w * 0.07,
                   left: h * 0.007 + w * 0.07,
                   child: SizedBox(
-                    height: h * 0.3 + w * 0.8,
+                    height: h * 0.5 + w * 0.4,
                     width: w,
                     child: PageView(
                       children: const [
-                        Image(image: AssetImage(s1)),
-                        Image(image: AssetImage(s2)),
-                        Image(image: AssetImage(s3)),
-                        Image(image: AssetImage(s4)),
+                        Image(
+                          image: AssetImage(s1),
+                          fit: BoxFit.fill,
+                        ),
+                        Image(
+                          image: AssetImage(s2),
+                          fit: BoxFit.fill,
+                        ),
+                        Image(
+                          image: AssetImage(s3),
+                          fit: BoxFit.fill,
+                        ),
+                        Image(
+                          image: AssetImage(s4),
+                          fit: BoxFit.fill,
+                        ),
                       ],
                     ),
                   ),
